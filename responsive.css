@@ -1,0 +1,39 @@
+/* SM: ≥640px */
+@media (min-width: 640px) {
+  /* Code cho các thiết bị từ 640px trở lên */
+  body {
+    font-size: 14px;
+  }
+}
+
+/* MD: ≥768px */
+@media (min-width: 768px) {
+  /* Code cho các thiết bị từ 768px trở lên */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* LG: ≥1024px */
+@media (min-width: 1024px) {
+  /* Code cho các thiết bị từ 1024px trở lên */
+  body {
+    font-size: 18px;
+  }
+}
+
+/* XL: ≥1280px */
+@media (min-width: 1280px) {
+  /* Code cho các thiết bị từ 1280px trở lên */
+  body {
+    font-size: 20px;
+  }
+}
+
+/* 2XL: ≥1536px */
+@media (min-width: 1536px) {
+  /* Code cho các thiết bị từ 1536px trở lên */
+  body {
+    font-size: 22px;
+  }
+}
