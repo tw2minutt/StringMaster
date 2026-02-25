@@ -25,7 +25,6 @@ header {
     backdrop-filter: blur(10px);
     top: 0;
     z-index: 1000;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #e5e7eb;
@@ -57,12 +56,38 @@ header {
     margin-right: 30px;
     display: flex;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .header-navigation ul li{
     text-decoration: none;
     list-style: none;
     display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-navigation ul li:hover{
+    color: #666;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 40px;
+}
+
+.dropdown-content a {
+    border-bottom: 1px solid #D1D5DB;
+    max-width: 100%;
+}
+
+.header-navigation ul li:hover .dropdown-content {
+    display:block;
 }
 
 .header-right-actions{
@@ -147,7 +172,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    transform: scale(0.9); 
+    transform: scale(0.9);
 }
 
 .hero-content-left {
@@ -475,6 +500,27 @@ header {
     transition: opacity 0.3s;
 }
 
+.add-cart-btn {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: black;
+    margin: 0;
+    border:1px solid #e5e7eb;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.add-cart-btn:hover {
+    background: #6B7280;
+}
+
 .product-card:hover .add-to-cart-btn {
     opacity: 1;
 }
@@ -515,6 +561,7 @@ header {
     flex-direction: row;
     gap: 4px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .current-price {
@@ -589,6 +636,7 @@ footer {
     gap: 24px;
     width: 100%;
     margin-top: 30px;
+    overflow:hidden;
 }
 
 .footer-section {
@@ -714,3 +762,185 @@ footer {
 .footer-links a:hover {
     text-decoration: underline;
 }
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#mute-btn {
+    padding: 15px;
+    border: 1px solid #9ca3af;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.interactive-guitar {
+  padding: 64px 0;
+  background: linear-gradient(to bottom right, #fef3c7, #fed7aa);
+}
+
+.guitar-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.guitar-neck {
+  position: relative;
+  background: linear-gradient(to right, #92400e, #78350f, #92400e);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  margin-bottom: 32px;
+}
+
+.frets {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  padding-left: 10%;
+}
+
+.fret {
+  flex: 1;
+  border-right: 2px solid rgba(146, 64, 14, 0.3);
+}
+
+.fret-markers {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  pointer-events: none;
+}
+
+.marker {
+  width: 12px;
+  height: 12px;
+  background: #fde68a;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.strings-container {
+  position: relative;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.string-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.string-label {
+  position: absolute;
+  left: -80px;
+  width: 64px;
+  text-align: right;
+  font-weight: 600;
+  color: #78350f;
+}
+
+.guitar-string {
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.guitar-string:hover {
+  filter: brightness(1.2);
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.guitar-string.string-active {
+  animation: stringVibrate 0.2s;
+  filter: brightness(1.5);
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.8);
+}
+
+@keyframes stringVibrate {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-2px); }
+  75% { transform: translateY(2px); }
+}
+
+.string-name {
+  position: absolute;
+  right: -200px;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #78350f;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.string-row:hover .string-name {
+  opacity: 1;
+}
+
+.guitar-nut {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: #fef3c7;
+  border-radius: 16px 0 0 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.string-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.string-info-card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.string-info-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.note-name {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.note-detail {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.frequency {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.fun-fact {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
