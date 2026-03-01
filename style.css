@@ -968,6 +968,8 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
 
 .info-opening {
@@ -986,3 +988,70 @@ hr {
     width: 70%
 }
 
+#info-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#info-skills ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    left: 20px;
+}
+
+#info-contact {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#info-contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#info-contactForm input {
+    flex: 1;
+    border: 1px solid #4b5563;
+    padding: 8px 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    outline: none;
+    font-size: 14px;
+    color: white;
+    position: static;
+}
+
+#info-contactForm textarea {
+    flex: 1;
+    border: 1px solid #4b5563;
+    padding: 8px 24px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #374151;
+    outline: none;
+    font-size: 14px;
+    color: white;
+}
+
+#info-contactForm button {
+    background-color: #ef4444;
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#info-contactForm span {
+    position: relative;
+}

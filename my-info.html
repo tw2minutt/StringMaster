@@ -80,10 +80,13 @@
           <div id="info-contact">
             <h2>Liên hệ</h2>
             <form id="info-contactForm">
-              <input type="text" placeholder="Tên" required>
-              <input type="email" placeholder="Email" required>
-              <textarea placeholder="Nội dung" required></textarea>
-              <button type="submit">Gửi</button>
+              <input id="name" type="text" placeholder="Tên">
+              <span id="nameError"></span>
+              <input id="email" type="email" placeholder="Email" required>
+              <span id="emailError"></span>
+              <textarea id="description" placeholder="Nội dung" maxlength="250" required></textarea>
+              <span id="descriptionError"></span>
+              <button class="submit" type="submit">Gửi</button>
             </form>
           </div>
         </div>
