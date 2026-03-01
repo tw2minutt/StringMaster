@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- /* HEADER  */ -->
+    <header>
+        <div class="header-container">
+            <div class="header-menu-container">
+                <a class="logo" href="index.html">
+                    StringMaster
+                </a>
+            </div>
+            <div class="header-navigation">
+                <ul>
+                    <li>Electric
+                      <div class="dropdown-content">
+                        <a href="#">Fender</a>
+                        <a href="#">Cordoba</a>
+                        <a href="#">Les Paul</a>
+                        <a href="#">Ibanez</a>
+                      </div>
+                    <li><a href="#">Acoustic</a></li>
+                    <li><a href="#">Bass</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="header-right-actions">
+                <div class="header-search-input">
+                    <input type="text" placeholder="Search guitars...">
+                    <button type="submit" class="header-search-btn">🔍</button>
+                </div>
+                <div class="header-user-profile">
+                    <button class="header-user-logo">
+                        <a href="#">👤</a>
+                    </button>
+                </div>
+                <div class="header-shopping-cart">
+                    <button class="header-cart-logo">
+                        <a href="#">🛒<span>3</span></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="info">
+      <div class="info-container">
+        <div class="info-opening">
+          <div class="info-image">
+            <img src="./img/ava.jpg" style="width: 120px;border-radius: 50%;">
+          </div>
+          <div class="info-expertise">
+            <h1>Nguyễn Tuấn Anh</h1>
+            <p id="tagline"></p>
+          </div>
+        </div>
+        <hr>
+        <div class="info-body">
+          <div id="info-about">
+            <h2>Giới thiệu</h2>
+            <p>Tôi yêu thích lập trình web và đang luyện tập HTML, CSS, JS.</p>
+          </div>
+        
+          <div id="info-skills">
+            <h2>Kỹ năng</h2>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="vl"></div>
+
+          <div id="info-contact">
+            <h2>Liên hệ</h2>
+            <form id="info-contactForm">
+              <input type="text" placeholder="Tên" required>
+              <input type="email" placeholder="Email" required>
+              <textarea placeholder="Nội dung" required></textarea>
+              <button type="submit">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <div class="column-icon">🚚</div>
+              <h3>Free Shipping</h3>
+              <p>On orders over $500</p>
+            </div>
+            <div class="footer-column">
+              <div class="column-icon">🛡️</div>
+              <h3>2 Year Warranty</h3>
+              <p>Full coverage on all guitars</p>
+            </div>
+            <div class="footer-column">
+              <div class="column-icon">🎧</div>
+              <h3>24/7 Support</h3>
+              <p>Expert advice anytime</p>
+            </div>
+             <div class="footer-column">
+              <div class="column-icon">🏆</div>
+              <h3>Authenticity Guaranteed</h3>
+              <p>100% genuine products</p>
+            </div>
+          </div>
+          <div class="footer-support-section">
+            <div class="footer-section">
+                <h3 class="footer-logo">StringMaster</h3>
+                <p>Your trusted destination for premium guitars and musical instruments since 1995.</p>
+                <ul class="social-links">
+                    <li><a href="#">📘</a></li>
+                    <li><a href="#">📷</a></li>
+                    <li><a href="#">🐦</a></li>
+                    <li><a href="#">📺</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <ul>
+                  <li><a href="#">Electric Guitars</a></li>
+                  <li><a href="#">Acoustic Guitars</a></li>
+                  <li><a href="#">Bass Guitars</a></li>
+                  <li><a href="#">Classical Guitars</a></li>
+                  <li><a href="#">Accessories</a> </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Shipping Info</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Warranty</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>
+                  Subscribe to get special offers and updates.
+                </p>
+                <div class="newsletter">
+                  <input type="email" class="footer-email-input" placeholder="Your email" />
+                  <button>Subscribe</button>
+                </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+              <p>
+                &copy; 2026 StringMaster. All rights reserved.
+              </p>
+              <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+              </div>
+            </div>
+        </div>
+      </section>
+        
+    </footer>
+
+
+    <!-- <--- script ---->
+    <script src="my-info.js"></script>
+</body>
+</html>

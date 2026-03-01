@@ -1,4 +1,5 @@
- // JavaScript for Interactive Guitar
+//index.html
+ // Js for Interactive Guitar
     const playString = (frequency, stringElement) => {
       // Get the mute button
       const muteBtn = document.getElementById("mute-btn");

@@ -1,3 +1,4 @@
+/* index css */
 * {
     margin: 0;
     padding: 0;
@@ -942,5 +943,46 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #6b7280;
+}
+
+/* my-info css */
+.info {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.info-container {
+    border: 1px solid red;
+    background: linear-gradient(to bottom right, #1f2937, #374151, #000);
+    border: 3px solid #6b7280;
+    border-radius: 10px 10px 0 0;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-opening {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    right: 100px;
+    width: 100%;
+    margin: 0 50px 0 50px;
+    gap: 30px;
+    padding: 20px;
+}
+
+hr {
+    width: 70%
 }
 
